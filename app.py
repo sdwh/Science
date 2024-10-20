@@ -63,7 +63,7 @@ for row in results:
     prev_id = max(id - 1, 1)
     next_id = min(id + 1, len(results))
 
-    content = template.replace('{{insert_block}}', f'<h2>{row[0]}</h2><p>{html_content}</p>')
+    content = template.replace('{{insert_block}}', f'<h2>{id} - {row[0]}</h2><p>{html_content}</p>')
     content = content.replace('{{id}}', f'{prev_id}')
     content = content.replace('{{prev}}', f'{prev_id}')
     content = content.replace('{{next}}', f'{next_id}')
