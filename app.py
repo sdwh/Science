@@ -45,7 +45,7 @@ content += ''.join([f'<li class="mb-1"><a class="text-decoration-none" href="{id
 content += '</ol>'
 content = template.replace('{{insert_block}}', content)
 minified_content = htmlmin.minify(content, remove_empty_space=True)
-file_name = os.path.join('web', 'index.html')
+file_name = os.path.join('docs', 'index.html')
 with open(file_name, 'w', encoding='utf-8') as file:
     file.write(minified_content)
 
@@ -69,7 +69,7 @@ for row in results:
     content = content.replace('{{next}}', f'{next_id}')
 
     minified_content = htmlmin.minify(content, remove_empty_space=True)
-    file_name = os.path.join('web', f'{id}.html')
+    file_name = os.path.join('docs', f'{id}.html')
 
     with open(file_name, 'w', encoding='utf-8') as file:
         file.write(minified_content)
