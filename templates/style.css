@@ -1,20 +1,4 @@
-body {
-    font-family: 'roboto-thin', sans-serif;
-    font-size: 1.25em;
-    color: #222222;
-    background-color: linen;
-}
 
-h2 {
-     color: teal;
-     font-weight: 600;
-}
-
-.container {
-    width: auto;
-    max-width: 780px;
-    padding: 0 15px;
-}
 
 .bd-placeholder-img {
     font-size: 1.125rem;

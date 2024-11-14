@@ -1,0 +1,11 @@
+{% extends "layout.jinja" %}
+
+{% block content %}
+<ol>
+    {% for id, question in questions %}
+        <li class="mb-1">
+            <a class="text-decoration-none" href="/{{ id }}">{{ question }}</a>
+        </li>
+    {% endfor %}
+</ol>
+{% endblock %}
